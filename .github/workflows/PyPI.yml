@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "3.x"
       - name: Install pypa/build
@@ -35,12 +35,12 @@ jobs:
           name: python-package-distributions
           path: dist/
       - name: Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
+          generate_release_notes: true
           fail_on_unmatched_files: true
           files: 'dist/*'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
   publish-to-pypi:
     name: Publish Python distribution to PyPI
@@ -50,7 +50,7 @@ jobs:
 
     environment:
       name: pypi
-      url: https://pypi.org/p/pyappstoreconnect
+      url: https://pypi.org/p/sirp
 
     permissions:
       id-token: write  # IMPORTANT: mandatory for trusted publishing
