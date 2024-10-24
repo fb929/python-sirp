@@ -1,5 +1,5 @@
 [project]
-name = "sirp"
+name = "python-sirp"
 version = "0.0.0"
 readme = "README.md"
 license = {file = "LICENSE"}
@@ -11,6 +11,6 @@ maintainers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/fb929/sirp"
-Documentation = "https://github.com/fb929/sirp"
-Repository = "https://github.com/fb929/sirp"
+Homepage = "https://github.com/fb929/python-sirp"
+Documentation = "https://github.com/fb929/python-sirp"
+Repository = "https://github.com/fb929/python-sirp"

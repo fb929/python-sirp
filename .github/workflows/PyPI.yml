@@ -50,7 +50,7 @@ jobs:
 
     environment:
       name: pypi
-      url: https://pypi.org/p/sirp
+      url: https://pypi.org/p/python-sirp
 
     permissions:
       id-token: write  # IMPORTANT: mandatory for trusted publishing
