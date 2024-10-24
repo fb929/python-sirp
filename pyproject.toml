@@ -11,6 +11,6 @@ maintainers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/fb929/python-sirp"
-Documentation = "https://github.com/fb929/python-sirp"
-Repository = "https://github.com/fb929/python-sirp"
+Homepage = "https://github.com/fb929/sirp"
+Documentation = "https://github.com/fb929/sirp"
+Repository = "https://github.com/fb929/sirp"
